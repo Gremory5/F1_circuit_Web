@@ -30,14 +30,14 @@ nav {
     display: grid;
     padding: 10%;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
-    margin: 50px;
+    grid-gap: 20px;
+    margin: 30px;
     font-family: 'formula1-display-bold', sans-serif;
 }
 
 .circuit-item {
     background-color: #0f0f0f;
-    padding: 20px;
+    padding: 10px;
     border-radius: 25px;
     text-align: center;
     opacity: 0;/* Initially set the opacity to 0 (invisible) */
@@ -69,4 +69,13 @@ nav {
 .circuit-item p {
     font-family: 'formula1-display-regular-2', sans-serif;
     color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+    .circuit-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin: 10px;
+        padding: 10px;
+    }
+    
 }
