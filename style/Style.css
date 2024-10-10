@@ -28,7 +28,7 @@ nav {
 
 .circuit-grid {
     display: grid;
-    padding: 10%;
+    padding: 1%;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
     margin: 30px;
@@ -44,14 +44,23 @@ nav {
     transition: opacity 0.5s ease-in-out; /* Add a smooth transition effect */
 }
 
+.little_flag {
+    position: absolute;
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    max-height: 20px;
+}
+
 .circuit-item.visible {
     opacity: 1; /* Set the opacity to 1 (visible) when the element is in view */
 }
 
 .circuit-item img {
     max-width: 90%;
-    height: 73%;
+    height: 70%;
     overflow: hidden;
+    display: flex;
 }
 
 .enlarge-on-hover {
@@ -77,5 +86,12 @@ nav {
         margin: 10px;
         padding: 10px;
     }
+
+    .circuit-item p {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    
     
 }
