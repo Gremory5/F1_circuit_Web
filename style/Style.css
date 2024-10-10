@@ -1,0 +1,72 @@
+
+body {
+    background-color: grey;
+    font-family: 'formula1-display-regular-2', sans-serif;
+}
+
+.logo {
+    width: 50%;
+    height: auto;
+    position: center;
+    margin-left: 20%;
+
+}
+
+nav {
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-family: 'formula1-display-regular-2', sans-serif;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.circuit-grid {
+    display: grid;
+    padding: 10%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin: 50px;
+    font-family: 'formula1-display-bold', sans-serif;
+}
+
+.circuit-item {
+    background-color: #0f0f0f;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    opacity: 0;/* Initially set the opacity to 0 (invisible) */
+    transition: opacity 0.5s ease-in-out; /* Add a smooth transition effect */
+}
+
+.circuit-item.visible {
+    opacity: 1; /* Set the opacity to 1 (visible) when the element is in view */
+}
+
+.circuit-item img {
+    max-width: 90%;
+    height: 73%;
+    overflow: hidden;
+}
+
+.enlarge-on-hover {
+    transition: transform 0.5s ease; /* Add a smooth transition effect */
+}
+.enlarge-on-hover:hover {
+    transform: scale(1.1); /* Enlarge the image by 20% on hover */
+}
+
+.circuit-item h3 {
+    font-family: 'formula1-display-bold', sans-serif;
+    color: rgb(255, 0, 0);
+}
+
+.circuit-item p {
+    font-family: 'formula1-display-regular-2', sans-serif;
+    color: aliceblue;
+}
